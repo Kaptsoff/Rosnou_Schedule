@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewScheduleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Предмет"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewPeriodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period Name"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewPeriodBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period Begin"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewPeriodEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period End"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewGroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groups"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewDisciplins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disciplins"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewPrepod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prepod"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewCampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campus"
+        android:textSize="16sp"/>
+
+    <!-- Add other TextViews as needed -->
+</LinearLayout>

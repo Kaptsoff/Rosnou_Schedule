@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/textViewIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название дисциплины" />
+
+    <TextView
+        android:id="@+id/textViewParentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent ID" />
+
+    <TextView
+        android:id="@+id/textViewSpravDisId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprav Dis ID" />
+
+    <TextView
+        android:id="@+id/textViewSpravKafedraId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprav Kafedra ID" />
+
+    <TextView
+        android:id="@+id/textViewMainPlanId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Plan ID" />
+
+    <TextView
+        android:id="@+id/textViewCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created At" />
+
+    <TextView
+        android:id="@+id/textViewCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created By" />
+
+    <TextView
+        android:id="@+id/textViewUpdatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated At" />
+
+    <TextView
+        android:id="@+id/textViewUpdatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated By" />
+
+    <TextView
+        android:id="@+id/textViewDeletedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deleted At" />
+
+    <TextView
+        android:id="@+id/textViewDeletedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deleted By" />
+
+    <TextView
+        android:id="@+id/textViewActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active" />
+
+    <TextView
+        android:id="@+id/textViewLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lock" />
+
+</LinearLayout>
