@@ -3,6 +3,7 @@ package com.example.rosnouschedule
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +12,9 @@ import com.example.rosnouschedule.data.BellScheduleItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class BellScheduleActivity : AppCompatActivity() {
 
@@ -41,6 +45,19 @@ class BellScheduleActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        // Найти TextView
+        val dateTextView: TextView = findViewById(R.id.dateTextView)
+
+        // Получить текущую дату
+        val currentDate = Date()
+
+        // Форматировать дату
+        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
+        val formattedDate = dateFormat.format(currentDate)
+
+        // Отобразить дату в TextView
+        dateTextView.text = formattedDate
 
         fetchBellSchedules()
     }
