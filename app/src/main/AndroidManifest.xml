@@ -13,13 +13,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="Расписание занятий"
-            android:theme="@style/Theme.AppCompat.Light">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,31 +30,26 @@
         <activity
             android:name=".EducatorsActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light"
             android:label="Преподаватели"/>
 
         <activity
             android:name=".DisciplinsActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light"
             android:label="Дисциплины"/>
 
         <activity
             android:name=".GroupActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light"
             android:label="Группы"/>
 
         <activity
             android:name=".BellScheduleActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light"
             android:label="Расписание звонков"/>
 
         <activity
             android:name=".RoomsActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light"
             android:label="Аудитории"/>
 
     </application>

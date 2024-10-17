@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/gradient_border.xml -->
+<!-- res/drawable/gradient_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Слой для фона кнопки -->
+
+
+    <!-- Слой для градиентной границы -->
+    <item>
+        <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="@color/DodgerBlue"
+                    android:centerColor="@color/Plum"
+                    android:endColor="@color/Violet"
+                    android:angle="0"/>
+            <!-- Цвета градиента -->
+
+            <corners android:radius="4dp"/> <!-- Скругленные углы, чтобы граница была ровной -->
+        </shape>
+    </item>
+
+    <item
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/LightGrey"/> <!-- Белый фон, можно изменить -->
+            <corners android:radius="4dp"/> <!-- Скругленные углы, опционально -->
+        </shape>
+    </item>
+
+    </layer-list>

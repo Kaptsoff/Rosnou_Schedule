@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RosnouSchedule</string>
     <string name="update_data">Обновить данные</string>
+    <string name="bells_schedule">Расписание звонков</string>
 </resources>

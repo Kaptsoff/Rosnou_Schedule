@@ -7,4 +7,31 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--colors for white version app-->
+    <!--colors of icons-->
+    <color name="DodgerBlue">#029CEC</color>
+    <color name="DeepSkyBlue">#46C6FE</color>
+    <color name="Plum">#FBA8FC</color>
+    <color name="Violet">#B287EA</color>
+
+    <!--colors of backgrounds-->
+    <color name="LightGrey">#D8D8D8</color>
+    <color name="WhiteSmoke">#F4F4F4</color>
+
+    <!--colors of shadows-->
+    <color name="DodgerBlueShadow">#005F90</color>
+    <color name="DeepSkyBlueShadow">#2A7595</color>
+    <color name="PlumShadow">#8F6190</color>
+    <color name="VioletShadow">#6A528A</color>
+
+    <!--array names colors for icons-->
+    <array name="background_colors">
+        <item>@color/DodgerBlue</item>
+        <item>@color/DeepSkyBlue</item>
+        <item>@color/Plum</item>
+        <item>@color/Violet</item>
+    </array>
+
+
 </resources>
