@@ -12,9 +12,7 @@ import com.example.rosnouschedule.data.BellScheduleItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+import com.example.rosnouschedule.extra.DisplayDates
 
 class BellScheduleActivity : AppCompatActivity() {
 
@@ -22,6 +20,7 @@ class BellScheduleActivity : AppCompatActivity() {
     private lateinit var adapter: BellScheduleAdapter
     private lateinit var refreshButton: Button
     private lateinit var backButton: Button
+    private lateinit var currentDate: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +29,7 @@ class BellScheduleActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerViewBellSchedule)
         refreshButton = findViewById(R.id.refreshButtonBellSchedule)
         backButton = findViewById(R.id.backButtonBellSchedule)
+        currentDate = findViewById(R.id.dateTextView)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = BellScheduleAdapter(emptyList())
@@ -46,18 +46,7 @@ class BellScheduleActivity : AppCompatActivity() {
             finish()
         }
 
-        // Найти TextView
-        val dateTextView: TextView = findViewById(R.id.dateTextView)
-
-        // Получить текущую дату
-        val currentDate = Date()
-
-        // Форматировать дату
-        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
-        val formattedDate = dateFormat.format(currentDate)
-
-        // Отобразить дату в TextView
-        dateTextView.text = formattedDate
+        DisplayDates.setCurrentDate(currentDate)
 
         fetchBellSchedules()
     }
