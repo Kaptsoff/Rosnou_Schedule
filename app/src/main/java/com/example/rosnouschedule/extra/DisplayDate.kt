@@ -6,7 +6,7 @@ import com.google.android.material.datepicker.MaterialDatePicker
 import java.text.SimpleDateFormat
 import java.util.*
 
-object DisplayDates : AppCompatActivity() {
+object DisplayDates {
 
     //эту функцию не тестировал!!!
     fun CurrentDate (

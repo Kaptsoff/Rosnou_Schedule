@@ -44,51 +44,28 @@
         android:textAlignment="center"/>
 
     <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@drawable/gradient_line"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"/>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/view2">
-
-        <Button
-            android:id="@+id/backButtonBellSchedule"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gradient_border_n_gray_background"
-            android:text="Назад" />
-
-        <Button
-            android:id="@+id/refreshButtonBellSchedule"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/gradient_border_n_gray_background"
-            android:text="Обновить данные" />
-
-    </LinearLayout>
-
-    <View
         android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_below="@+id/linearLayout2"
+        android:layout_below="@+id/textView1"
         android:background="@drawable/gradient_line"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshBellSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view3">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewBellSchedule"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/view3" />
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
 
     <View
         android:id="@+id/view4"
