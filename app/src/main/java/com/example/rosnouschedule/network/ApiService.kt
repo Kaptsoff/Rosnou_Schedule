@@ -7,7 +7,8 @@ import com.example.rosnouschedule.data.ScheduleItem
 import com.example.rosnouschedule.data.EducatorItem
 import com.example.rosnouschedule.data.GroupItem
 import com.example.rosnouschedule.data.BellScheduleItem
-import com.example.rosnouschedule.data.Room
+import com.example.rosnouschedule.data.RoomItem
+import com.example.rosnouschedule.data.WeeklyScheduleItem
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -30,6 +31,9 @@ interface ApiService {
     fun getBellSchedules(): Call<List<BellScheduleItem>>
 
     @GET("v1/rooms")
-    fun getRooms(): Call<List<Room>>
+    fun getRooms(): Call<List<RoomItem>>
+
+    @GET("v1/schedules")
+    fun getWeeklySchedule(): Call<List<WeeklyScheduleItem>>
 
 }

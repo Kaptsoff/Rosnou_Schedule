@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rosnouschedule.adapters.RoomAdapter
-import com.example.rosnouschedule.data.Room
+import com.example.rosnouschedule.data.RoomItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -46,8 +46,8 @@ class RoomsActivity : AppCompatActivity() {
     }
 
     private fun fetchRooms() {
-        RetrofitClient.apiService.getRooms().enqueue(object : Callback<List<Room>> {
-            override fun onResponse(call: Call<List<Room>>, response: Response<List<Room>>) {
+        RetrofitClient.apiService.getRooms().enqueue(object : Callback<List<RoomItem>> {
+            override fun onResponse(call: Call<List<RoomItem>>, response: Response<List<RoomItem>>) {
                 if (response.isSuccessful) {
                     response.body()?.let { rooms ->
                         adapter = RoomAdapter(rooms)
@@ -56,7 +56,7 @@ class RoomsActivity : AppCompatActivity() {
                 }
             }
 
-            override fun onFailure(call: Call<List<Room>>, t: Throwable) {
+            override fun onFailure(call: Call<List<RoomItem>>, t: Throwable) {
                 // Handle error
             }
         })

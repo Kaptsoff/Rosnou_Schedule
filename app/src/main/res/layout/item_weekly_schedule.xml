@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_weekly_schedule.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_border_n_gray_background">
+
+    <TextView
+        android:id="@+id/weekDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/periodTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:30 - 09:50" />
+
+    <TextView
+        android:id="@+id/discipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Административное право"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зайцева С.П." />
+
+    <TextView
+        android:id="@+id/roomItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Аудитория: 301" />
+
+    <TextView
+        android:id="@+id/typeWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Числитель"
+        android:textStyle="italic" />
+</LinearLayout>

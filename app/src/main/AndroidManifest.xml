@@ -52,5 +52,10 @@
             android:exported="true"
             android:label="Аудитории"/>
 
+        <activity
+            android:name=".WeeklyScheduleActivity"
+            android:exported="true"
+            android:label="Аудитории"/>
+
     </application>
 </manifest>

@@ -1,6 +1,6 @@
 package com.example.rosnouschedule.data
 
-data class Room(
+data class RoomItem(
     val id: Int,
     val name: String,
     val level: Int,
